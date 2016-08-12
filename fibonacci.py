@@ -3,9 +3,12 @@ numLim = int(numLimString)
 num0 = 0
 num1 = 1
 fib = num0+num1
-resultado = str(fib)
+resultado=""
 while fib < numLim:
-    resultado += ", " + str(fib)
+    if fib==1:
+        resultado = str(fib)
+    else:
+        resultado += ", " + str(fib)
     num0 = num1
     num1 = fib
     fib = num0+num1
